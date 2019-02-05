@@ -1,0 +1,33 @@
+/*my container class get the grid ready*/
+.container
+{
+    display: grid;
+    grid-template-areas:
+    "header." /*the period created an empty space*/
+    "section section" /*fills up the whole section*/
+    ".footer";
+    grid-template-columns: 2fr 2fr;
+    grid-gap:20px;
+
+}
+/*added some padding and color to my header*/
+header
+{
+    background:pink;
+    grid-area: header;
+    padding:30px;
+}
+/*added width to make my section go all the way accross*/
+section
+{/*added some padding and color to my section*/
+    grid-area: section;
+    background:purple;
+    width:100%;
+    padding:30px;
+}
+footer
+{/*added some padding and color to footer*/
+    grid-area: footer;
+    background: yellow;
+    padding:30px;
+}
